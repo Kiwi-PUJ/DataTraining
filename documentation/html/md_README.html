@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Data Training and Segmentation app: DataTraining</title>
+<title>Data Training and Segmentation Code: README</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,10 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Data Training and Segmentation app
-   &#160;<span id="projectnumber">1</span>
+   <div id="projectname">Data Training and Segmentation Code
    </div>
-   <div id="projectbrief">Data training and segmentation app software developed with TensorFlow-Keras</div>
+   <div id="projectbrief">Data training and segmentation code developed with TensorFlow-Keras</div>
   </td>
  </tr>
  </tbody>
@@ -65,10 +64,49 @@ $(function() {
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">DataTraining </div>  </div>
+<div class="title">README </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><h1 align="center">Data Training </h1>
+<h5 align="center">A project to train CNNs for image segmentation </h5>
+<p align="center"></p>
+<p><img src="./documentation/media/log.png" alt="Logo" width="1200" class="inline"/> </p>
+<p>Considering the impact on the world of artificial intelligence and process automation in recent years, semi-autonomous systems have been developed that act responding to signals from their environment. An example is food delivery robots that establish their trajectory from images of their surroundings. To develop a system like this it is necessary to make use of segmentation algorithms trained to recognize obstacles, and to train these algorithms, databases of segmented images corresponding to the environment in which the robot will operate are required.</p>
+<p>To train the selected models with the segmented dataset in <a href="https://github.com/Kiwi-PUJ/DataLabelling">DataLabelling</a>, the code available in this repository was developed.</p>
+<p><b>Status</b>: In development (code updates may be submitted after publication)</p>
+<hr  />
+ <h3 align="left">Clone the data prediction repository </h3>
+<p>For the installation is necessary to clone the current repository in a local repository. If you don't have GitHub installed yet, you should. If you are on Linux you can run the following command: </p><pre class="fragment">sudo apt-get install git
+</pre><p>Now you need to configure GitHub. For this run the following commands: </p><pre class="fragment">git config --global user.name "user_name"
+git config --global user.email "email_id"
+</pre><p>Otherwise, if you are not working on Linux, you can install GitHub from the <a href="https://desktop.github.com/">official website</a>.</p>
+<p>After installing and configuring GitHub on your computer, you must clone the repository. If you are on Linux, from the terminal you must access the path where you want the repository to be cloned and execute the following command: </p><pre class="fragment">git clone https://github.com/Kiwi-PUJ/DataLabelling.git
+</pre><p><em>If you are not working on Linux you must clone the repository from the GitHub application.</em></p>
+<p><b>Now the application files will be on your device.</b></p>
+<hr  />
+ <h3 align="left">Build and Run Docker Image </h3>
+<p>The Image Labelling App dependencies, compilation, and configuration are packaged in a Docker Image. Before continuing, make sure you have Docker installed on your device. If it is not installed and you are working on Linux, you can run the following commands in a terminal: </p><pre class="fragment">sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+</pre><p>This can take a while. When the installation is done you can test it by running the Docker image <em>hello-world</em>. </p><pre class="fragment">sudo docker run hello-world
+</pre><p>If the installation was done correctly, you should see some informational text on the screen.</p>
+<p>Besides this, there are other post-installation steps for Linux. To complete them, run the following commands: </p><pre class="fragment">sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker
+</pre><p><em>If you are not working on Linux, you can install by visiting the</em> <a href="https://docs.docker.com/get-docker/">official website</a>.</p>
+<p>To run the data prediction Docker image, verify that you are on the <b>DataTraining</b> path and run the following command: </p><pre class="fragment">bash start.sh
+</pre><p>If it's the first time probably is going to take a while.</p>
+<p>If all goes well, you should be seeing a progress bar for each of the training proccess and the trained models should be saving to the <b>files</b> folder.</p>
+<hr  />
+ <h2 align="left">Code Documentation </h2>
+<p>The code documentation was done using PEP8 and Doxygen and is available <a href="http://trainingkiwipuj.125mb.com/">here</a></p>
+<hr  />
+ <h2 align="left">This project is being developed by: </h2>
+<p>✈️ Andrea Juliana Ruiz Gómez, <a href="https://github.com/andrearuizg">GitHub</a>, Email: <a href="#" onclick="location.href='mai'+'lto:'+'and'+'re'+'a_r'+'ui'+'z@j'+'av'+'eri'+'an'+'a.e'+'du'+'.co'; return false;">andre<span style="display: none;">.nosp@m.</span>a_ru<span style="display: none;">.nosp@m.</span>iz@ja<span style="display: none;">.nosp@m.</span>veri<span style="display: none;">.nosp@m.</span>ana.e<span style="display: none;">.nosp@m.</span>du.c<span style="display: none;">.nosp@m.</span>o</a></p>
+<p>🏎️ Pedro Elí Ruiz Zárate, <a href="https://github.com/PedroRuizCode">GitHub</a>, Email: <a href="#" onclick="location.href='mai'+'lto:'+'ped'+'ro'+'.ru'+'iz'+'@ja'+'ve'+'ria'+'na'+'.ed'+'u.'+'co'; return false;">pedro<span style="display: none;">.nosp@m.</span>.rui<span style="display: none;">.nosp@m.</span>z@jav<span style="display: none;">.nosp@m.</span>eria<span style="display: none;">.nosp@m.</span>na.ed<span style="display: none;">.nosp@m.</span>u.co</a></p>
+<h3 align="left">With the support of: </h3>
+<p>👨🏻‍🏫 Francisco Carlos Calderón Bocanegra, <a href="https://github.com/calderonf">GitHub</a></p>
+<p>👨🏻‍💻 John Alberto Betancourt Gonzalez, <a href="https://github.com/JohnBetaCode">GitHub</a> </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
