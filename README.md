@@ -10,7 +10,7 @@ Considering the impact on the world of artificial intelligence and process autom
 
 To train the selected models with the segmented dataset in [DataLabelling](https://github.com/Kiwi-PUJ/DataLabelling), the code available in this repository was developed.
 
-**Status**: In development (code updates may be submitted after publication)
+**Status**: Finished (Waiting for evaluation)
 
 ---
 <h3 align="left"> Clone the data prediction repository </h3>
